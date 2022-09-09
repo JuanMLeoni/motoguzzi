@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AA:wght@500&display=swap');
+
+* {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: solid;
+    border-color: rgb(32, 31, 31);
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background-color: white;
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(60, 60, 60);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url(assets/logo2.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    max-width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+
+.TL {
+    border-bottom: solid thin black;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.T {
+    font-family: 'Koulen', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.BOX {
+    border-bottom: solid thin black;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+}
+
+.BOX p {
+    font-family: 'Koulen', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.centerlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.logo {
+    background-color: transparent;
+    max-width: 143px;
+    max-height: 143px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.carru {
+    height: 87vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.BotonI_img {
+    border: none;
+    background-color: transparent;
+    max-width: 70px;
+}
+
+.Fotos {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    transition: transform .45s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.Botones {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.Boton1 {
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0 0 0 2px white;
+}
+
+.Boton1:hover {
+    background-color: gray;
+    box-shadow: 0 0 0 2px white;
+}
+
+
+.BotonI_2 {
+    margin-top: 0px;
+}
+
+.activo {
+    background-color: black;
+}
+
+.Foto1 {
+    width: 50%;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.Foto1 p {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.929);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+}
+
+.Moto {
+    /* max-width: 100%; */
+    width: 100%;
+    background-color: white;
+}
+
+.EO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40px;
+    height: 100px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.botons {
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    position: fixed;
+    background-color: transparent;
+    width: 40px;
+    height: 110px;
+    right: 0px;
+    top: 45%;
+    z-index: 10000;
+    -webkit-transition: width 0.3s ease-in-out .1s,
+        height 0.3s ease-in-out .1s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.botons:hover {
+    width: 160px;
+}
+
+.EO {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EO p,
+.EO a,
+.EO_img {
+    color: black(255, 255, 255);
+    width: 100%;
+    height: 40px;
+}
+
+.EO p {
+    padding-left: 20px;
+}
+
+.EO_img:hover,
+.EO p:hover,
+.EO a:hover {
+    background-color: #b8b3b345;
+}
+
+.EO_A {
+    border-left: solid;
+    border-color: black;
+    text-decoration: none;
+}
+
+.EO_img {
+    width: 27px;
+}
+
+.EO_T {
+
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.EO_T p {
+    font-family: 'Koulen', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+
+}
+
+.Lineas img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.Lineas p {
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+.Lineas {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    width: 70%;
+    gap: 70px;
+    margin-bottom: 60px;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+
+.L1 {
+    width: 300px;
+}
+
+.L1_D {
+    transition: all .5s ease-in-out;
+}
+
+.L1_D:hover {
+    transform: scale(1.15);
+    /* font-weight: 800; */
+
+}
+
+.TEXT {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.TEXT img {
+    width: 100%;
+    height: auto;
+}
+
+.TEXT h2 {
+    top: 20px;
+    left: 0;
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+.TEXT {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.TEXT img {
+    width: 100%;
+    height: auto;
+}
+
+.TEXT h2 {
+    top: 20px;
+    left: 0;
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+.TEXT p {
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+
+}
+
+.TEXT2 {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.TEXT2 img {
+    width: 100%;
+    height: auto;
+}
+
+.TEXT2 h2 {
+    top: 20px;
+    right: 0;
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 5px;
+}
+
+.TEXT2 p {
+    bottom: 10px;
+    right: 0;
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: transform .45s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+
+}
+
+
+@media screen and (min-width: 900px) and (max-width:1080px) {
+
+    .carru {
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Foto1 p {
+        position: absolute;
+        left: 0;
+        top: 14%;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 45px;
+        background-color: rgba(0, 0, 0, 0.929);
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+
+    .carru {
+        height: 280px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Foto1 p {
+        position: absolute;
+        left: 0;
+        top: 14%;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.929);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 12px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 5px;
+    }
+
+    .Lineas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TEXT h2 {
+        top: 20px;
+        left: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 5px;
+
+    }
+
+    .TEXT p {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 5px;
+
+    }
+
+    .TEXT2 h2 {
+        top: 20px;
+        right: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 5px;
+
+    }
+
+    .TEXT2 p {
+        bottom: 10px;
+        right: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 5px;
+
+    }
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 500px) {
+
+    .carru {
+        height: 220px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Foto1 p {
+        position: absolute;
+        left: 0;
+        top: 12%;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 15px;
+        padding: 15px;
+        overflow: hidden;
+
+    }
+
+    .Lineas {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .L1_D:hover {
+        transform: scale(1.00);
+    }
+
+    .TEXT h2 {
+        top: 20px;
+        left: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 5px;
+
+    }
+
+    .TEXT p {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 5px;
+    }
+
+    .TEXT2 h2 {
+        top: 20px;
+        right: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 5px;
+
+    }
+
+    .TEXT2 p {
+        bottom: 10px;
+        right: 0;
+        position: absolute;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.782);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 16px;
+        overflow: hidden;
+        transition: transform .45s ease-in-out;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 5px;
+    }
+
+    .Boton1 {
+        border: none;
+        width: 1px;
+        height: 1px;
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: transparent;
+        transition: .5s;
+        box-shadow: 0 0 0 2px transparent;
+    }
+    
+    .Boton1:hover {
+        background-color: transparent;
+        box-shadow: 0 0 0 2px transparent;
+    }
+    
+
+    .L1 {
+        width: 230px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        background-image: url(assets/logo2.jpg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        max-width: 100%;
+        height: 170px;
+        overflow: hidden;
+    }
+
+}

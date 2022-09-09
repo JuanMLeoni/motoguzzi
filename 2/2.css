@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    background-color: transparent;
+    padding: 0%;
+    margin-top: 15px;
+    font-family: "Koulen";
+}
+
+.AA {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    width: 100%;
+    height: 70px;
+}
+
+.logo {
+    max-height: 200px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
