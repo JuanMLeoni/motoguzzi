@@ -28,3 +28,4 @@ setInterval(() => {
     botones[imgACT].classList.add("activo")
 }, tiempomili)
 
+console.log("pepe")
